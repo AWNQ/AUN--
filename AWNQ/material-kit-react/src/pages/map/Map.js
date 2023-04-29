@@ -1,4 +1,5 @@
 import React from "react";
+// import { useQuery } from "react-query";
 import data from "./data.json";
 
 import {
@@ -30,12 +31,7 @@ function Map() {
   console.log(data);
 
   return (
-    <MapContainer
-      center={[24.466667, 54.366669]}
-      zoom={13}
-      scrollWheelZoom={true}
-    >
-      <MapCard></MapCard>
+    <MapContainer center={[24.466667, 54.366669]} zoom={13} scrollWheelZoom={true}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -51,11 +47,7 @@ function Map() {
         </LayersControl.Overlay>
         <LayersControl.Overlay checked name="Layer group with circles">
           <LayerGroup>
-            <Circle
-              center={center}
-              pathOptions={{ fillColor: "blue" }}
-              radius={200}
-            />
+            <Circle center={center} pathOptions={{ fillColor: "blue" }} radius={200} />
             <Circle
               center={center}
               pathOptions={{ fillColor: "red" }}

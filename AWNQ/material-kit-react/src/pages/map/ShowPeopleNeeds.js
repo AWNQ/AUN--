@@ -16,7 +16,7 @@ const fetchIcon = (count, size) => {
 };
 
 const cuffs = new L.Icon({
-  iconUrl: "/handcuffs.svg",
+  iconUrl: "./handcuffs.svg",
   iconSize: [25, 25],
 });
 
@@ -59,10 +59,7 @@ function ShowCrimes({ data }) {
     properties: { cluster: false, crimeId: crime.id, category: crime.category },
     geometry: {
       type: "Point",
-      coordinates: [
-        parseFloat(crime.location.longitude),
-        parseFloat(crime.location.latitude),
-      ],
+      coordinates: [parseFloat(crime.location.longitude), parseFloat(crime.location.latitude)],
     },
   }));
 
@@ -81,8 +78,7 @@ function ShowCrimes({ data }) {
         // every cluster point has coordinates
         const [longitude, latitude] = cluster.geometry.coordinates;
         // the point may be either a cluster or a crime point
-        const { cluster: isCluster, point_count: pointCount } =
-          cluster.properties;
+        const { cluster: isCluster, point_count: pointCount } = cluster.properties;
 
         // we have a cluster to render
         if (isCluster) {
@@ -90,10 +86,7 @@ function ShowCrimes({ data }) {
             <Marker
               key={`cluster-${cluster.id}`}
               position={[latitude, longitude]}
-              icon={fetchIcon(
-                pointCount,
-                10 + (pointCount / points.length) * 40
-              )}
+              icon={fetchIcon(pointCount, 10 + (pointCount / points.length) * 40)}
               eventHandlers={{
                 click: () => {
                   const expansionZoom = Math.min(
