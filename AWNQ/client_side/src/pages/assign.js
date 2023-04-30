@@ -51,7 +51,13 @@ const Page = () => {
             <Grid xs={12} md={12} lg={12}>
               {/*<Map />*/}
               <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
-                <Image style={{objectPosition:"cover"}} src="/after.png" width={1000} height={300} quality={100} />
+                <Image
+                  style={{ objectPosition: "cover" }}
+                  src="/after.png"
+                  width={1000}
+                  height={300}
+                  quality={100}
+                />
               </div>
             </Grid>
             <Grid xs={12} md={12} lg={12}>
@@ -59,7 +65,61 @@ const Page = () => {
                 orders={[
                   {
                     id: "1",
-                    address: "25",
+                    address: "2",
+                    avatar: "jade",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "van",
+                    name: "A1231",
+                    phone: "...",
+                  },
+                  {
+                    id: "4",
+                    address: "3",
+                    avatar: "priya",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "car",
+                    name: "B1235",
+                    phone: "...",
+                  },
+                  {
+                    id: "1",
+                    address: "3",
+                    avatar: "jade",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "van",
+                    name: "A1231",
+                    phone: "...",
+                  },
+                  {
+                    id: "2",
+                    address: "4",
+                    avatar: "sakeeth",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "car",
+                    name: "D3341",
+                    phone: "...",
+                  },
+                  {
+                    id: "1",
+                    address: "4",
+                    avatar: "jade",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "van",
+                    name: "A1231",
+                    phone: "...",
+                  },
+                  {
+                    id: "3",
+                    address: "5",
+                    avatar: "aziz",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "van",
+                    name: "Y2390",
+                    phone: "...",
+                  },
+                  {
+                    id: "1",
+                    address: "8",
                     avatar: "jade",
                     createdAt: subDays(subHours(now, 7), 1).getTime(),
                     email: "van",
@@ -77,7 +137,34 @@ const Page = () => {
                   },
                   {
                     id: "3",
-                    address: "19",
+                    address: "5",
+                    avatar: "aziz",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "van",
+                    name: "Y2390",
+                    phone: "...",
+                  },
+                  {
+                    id: "3",
+                    address: "2",
+                    avatar: "aziz",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "van",
+                    name: "Y2390",
+                    phone: "...",
+                  },
+                  {
+                    id: "3",
+                    address: "2",
+                    avatar: "aziz",
+                    createdAt: subDays(subHours(now, 7), 1).getTime(),
+                    email: "van",
+                    name: "Y2390",
+                    phone: "...",
+                  },
+                  {
+                    id: "3",
+                    address: "4",
                     avatar: "aziz",
                     createdAt: subDays(subHours(now, 7), 1).getTime(),
                     email: "van",

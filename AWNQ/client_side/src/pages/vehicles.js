@@ -18,7 +18,7 @@ const data = [
   {
     id: "1",
     address: "25",
-    avatar: "jade",
+    avatar: "jade (citizen)",
     createdAt: subDays(subHours(now, 7), 1).getTime(),
     email: "van",
     name: "A1231",
@@ -27,7 +27,7 @@ const data = [
   {
     id: "2",
     address: "4",
-    avatar: "sakeeth",
+    avatar: "sakeeth (citizen)",
     createdAt: subDays(subHours(now, 7), 1).getTime(),
     email: "car",
     name: "D3341",
@@ -36,7 +36,7 @@ const data = [
   {
     id: "3",
     address: "19",
-    avatar: "aziz",
+    avatar: "aziz (government)",
     createdAt: subDays(subHours(now, 7), 1).getTime(),
     email: "van",
     name: "Y2390",
@@ -45,7 +45,7 @@ const data = [
   {
     id: "4",
     address: "3",
-    avatar: "priya",
+    avatar: "priya (citizen)",
     createdAt: subDays(subHours(now, 7), 1).getTime(),
     email: "car",
     name: "B1235",

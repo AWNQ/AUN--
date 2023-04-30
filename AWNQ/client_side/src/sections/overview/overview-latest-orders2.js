@@ -29,7 +29,7 @@ export const OverviewLatestOrders2 = (props) => {
 
   return (
     <Card sx={sx}>
-      <CardHeader title="AVAILABLE VEHICLES" />
+      <CardHeader title="ASSIGNMENT" />
       <Scrollbar sx={{ flexGrow: 1 }}>
         <Box sx={{ minWidth: 800 }}>
           <Table>
